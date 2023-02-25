@@ -183,7 +183,7 @@ abstract class Settings implements Arrayable, Jsonable, Responsable
         return $this;
     }
 
-    public function update($properties): self
+    public function update(array $properties): self
     {
         return $this->fill($properties)->save();
     }
